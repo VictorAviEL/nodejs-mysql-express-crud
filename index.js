@@ -2,9 +2,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const mysql = require('mysql');
+var cors = require('cors');
+
 
 // parse application/json
+app.use(cors());
 app.use(bodyParser.json());
+
 
 //create database connection
 const conn = mysql.createConnection({
@@ -25,7 +29,7 @@ app.get('/api/products',(req, res) => {
     let sql = "SELECT * FROM product";
     let query = conn.query(sql, (err, results) => {
         if(err) throw err;
-        res.send(JSON.stringify({"status": 200, "error": null, "response": results}));
+        res.send(JSON.stringify(results));
     });
 });
 
@@ -34,7 +38,7 @@ app.get('/api/products/:id',(req, res) => {
     let sql = "SELECT * FROM product WHERE product_id="+req.params.id;
     let query = conn.query(sql, (err, results) => {
         if(err) throw err;
-        res.send(JSON.stringify({"status": 200, "error": null, "response": results}));
+        res.send(JSON.stringify(results));
     });
 });
 
@@ -44,7 +48,7 @@ app.post('/api/products',(req, res) => {
     let sql = "INSERT INTO product SET ?";
     let query = conn.query(sql, data,(err, results) => {
         if(err) throw err;
-        res.send(JSON.stringify({"status": 200, "error": null, "response": results}));
+        res.send(JSON.stringify(results));
     });
 });
 
@@ -53,7 +57,7 @@ app.put('/api/products/:id',(req, res) => {
     let sql = "UPDATE product SET product_name='"+req.body.product_name+"', product_price='"+req.body.product_price+"' WHERE product_id="+req.params.id;
     let query = conn.query(sql, (err, results) => {
         if(err) throw err;
-        res.send(JSON.stringify({"status": 200, "error": null, "response": results}));
+        res.send(JSON.stringify(results));
     });
 });
 
@@ -62,7 +66,7 @@ app.delete('/api/products/:id',(req, res) => {
     let sql = "DELETE FROM product WHERE product_id="+req.params.id+"";
     let query = conn.query(sql, (err, results) => {
         if(err) throw err;
-        res.send(JSON.stringify({"status": 200, "error": null, "response": results}));
+        res.send(JSON.stringify(results));
     });
 });
 
