@@ -4,8 +4,6 @@
     <list default="true" id="620b845a-cd15-488c-bdee-a5ce2072122c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +41,38 @@
       <updated>1582691941098</updated>
       <workItem from="1582691942463" duration="73000" />
       <workItem from="1582694908330" duration="517000" />
-      <workItem from="1582696631347" duration="2738000" />
+      <workItem from="1582696631347" duration="2803000" />
+      <workItem from="1582825452172" duration="6021000" />
     </task>
+    <task id="LOCAL-00001" summary="updating cors">
+      <created>1582700539889</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582700539889</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updating cors" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating cors" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="657" y="2" key="CommitChangelistDialog2" timestamp="1582700538806">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="657" y="2" key="CommitChangelistDialog2/0.0.1536.802@0.0.1536.802" timestamp="1582700538806" />
+    <state x="612" y="147" key="Vcs.Push.Dialog.v2" timestamp="1582700551735">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="612" y="147" key="Vcs.Push.Dialog.v2/0.0.1536.802@0.0.1536.802" timestamp="1582700551735" />
+    <state x="809" y="185" key="run.anything.popup" timestamp="1582829938082">
+      <screen x="0" y="0" width="1536" height="802" />
+    </state>
+    <state x="809" y="185" key="run.anything.popup/0.0.1536.802@0.0.1536.802" timestamp="1582829938082" />
   </component>
 </project>

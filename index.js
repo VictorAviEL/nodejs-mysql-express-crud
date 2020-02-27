@@ -70,6 +70,21 @@ app.delete('/api/products/:id',(req, res) => {
     });
 });
 
+
+
+//User dummy Login
+//add new product
+app.post('/api/canMakeDummyLogin',(req, res) => {
+    let data = {username: req.body.username, password: req.body.password};
+    let sql = "SELECT COUNT(username) as exist FROM user WHERE username='"+req.body.username+"' AND password='"+req.body.password+"'" ;
+    let query = conn.query(sql, data,(err, results) => {
+        // console.log(results);
+        if(err)
+            res.send(JSON.stringify(false));
+        res.send(JSON.stringify(results));
+    });
+});
+
 //Server listening
 app.listen(3000,() =>{
     console.log('Server started on port 3000...');
